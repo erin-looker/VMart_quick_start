@@ -1,5 +1,5 @@
 - view: vendor_dimension
-  sql_table_name: public.vendor_dimension
+  sql_table_name: vmart.vendor_dimension
   fields:
 
   - dimension: deal_size
@@ -35,4 +35,3 @@
   - measure: count
     type: count
     drill_fields: [vendor_name]
-

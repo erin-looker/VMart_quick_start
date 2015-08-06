@@ -3,8 +3,8 @@
     sql: |
       SELECT 
         MAX(DATE(date_dimension.date)) AS latest_date
-      FROM public.inventory_fact AS inventory_fact
-      INNER JOIN public.date_dimension AS date_dimension ON inventory_fact.date_key = date_dimension.date_key
+      FROM vmart.inventory_fact AS inventory_fact
+      INNER JOIN vmart.date_dimension AS date_dimension ON inventory_fact.date_key = date_dimension.date_key
       WHERE 1=1
       AND {% condition date_dimension.date_date %} date_dimension.date {% endcondition %}
 
@@ -22,4 +22,3 @@
   sets:
     detail:
       - latest_date
-

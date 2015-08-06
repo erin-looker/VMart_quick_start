@@ -1,5 +1,5 @@
 - view: testing
-  sql_table_name: public.testing
+  sql_table_name: misc.testing
   fields:
 
   - dimension: borrowerfico_range_high
@@ -37,4 +37,3 @@
   - measure: count
     type: count
     drill_fields: []
-

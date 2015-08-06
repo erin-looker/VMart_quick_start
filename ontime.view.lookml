@@ -1,5 +1,5 @@
 - view: ontime
-  sql_table_name: public.ONTIME
+  sql_table_name: misc.ONTIME
   fields:
 
   - dimension: actual_elapsed_time
@@ -119,4 +119,3 @@
   - measure: count
     type: count
     drill_fields: []
-

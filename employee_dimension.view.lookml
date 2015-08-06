@@ -1,5 +1,5 @@
 - view: employee_dimension
-  sql_table_name: public.employee_dimension
+  sql_table_name: vmart.employee_dimension
   fields:
 
   - dimension: annual_salary
@@ -73,4 +73,3 @@
   - measure: count
     type: count
     drill_fields: [employee_last_name, employee_first_name]
-

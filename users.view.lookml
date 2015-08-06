@@ -1,5 +1,5 @@
 - view: users
-  sql_table_name: public.USERS
+  sql_table_name: vmart.USERS
   fields:
 
   - dimension: id
@@ -22,4 +22,3 @@
   - measure: count
     type: count
     drill_fields: [id, name, orders.count]
-

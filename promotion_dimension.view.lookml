@@ -1,5 +1,5 @@
 - view: promotion_dimension
-  sql_table_name: public.promotion_dimension
+  sql_table_name: vmart.promotion_dimension
   fields:
 
   - dimension: ad_media_name
@@ -50,4 +50,3 @@
   - measure: count
     type: count
     drill_fields: [ad_media_name, promotion_name]
-

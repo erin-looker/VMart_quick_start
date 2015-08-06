@@ -1,5 +1,5 @@
 - view: r_models
-  sql_table_name: public.R_models
+  sql_table_name: misc.R_models
   fields:
 
   - dimension: deploy_time
@@ -24,4 +24,3 @@
   - measure: count
     type: count
     drill_fields: []
-

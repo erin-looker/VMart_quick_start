@@ -1,5 +1,5 @@
 - view: warehouse_dimension
-  sql_table_name: public.warehouse_dimension
+  sql_table_name: vmart.warehouse_dimension
   fields:
 
   - dimension: warehouse_address
@@ -25,4 +25,3 @@
   - measure: count
     type: count
     drill_fields: [warehouse_name]
-

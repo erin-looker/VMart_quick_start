@@ -1,5 +1,5 @@
 - view: customer_dimension
-  sql_table_name: public.customer_dimension
+  sql_table_name: vmart.customer_dimension
   fields:
 
   - dimension: annual_income
@@ -89,4 +89,3 @@
   - measure: count
     type: count
     drill_fields: [customer_name]
-

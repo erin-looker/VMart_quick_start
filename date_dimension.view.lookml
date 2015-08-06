@@ -1,5 +1,5 @@
 - view: date_dimension
-  sql_table_name: public.date_dimension
+  sql_table_name: vmart.date_dimension
   fields:
 
   - dimension: calendar_half_year

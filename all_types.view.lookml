@@ -1,5 +1,5 @@
 - view: all_types
-  sql_table_name: public.ALL_TYPES
+  sql_table_name: misc.ALL_TYPES
   fields:
 
   - dimension: this_float
@@ -16,4 +16,3 @@
   - measure: count
     type: count
     drill_fields: []
-

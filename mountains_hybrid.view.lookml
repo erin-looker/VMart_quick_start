@@ -1,5 +1,5 @@
 - view: mountains_hybrid
-  sql_table_name: public.mountains_hybrid
+  sql_table_name: misc.mountains_hybrid
   fields:
 
   - dimension: __raw__
@@ -15,4 +15,3 @@
   - measure: count
     type: count
     drill_fields: [name]
-

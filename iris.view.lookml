@@ -1,5 +1,5 @@
 - view: iris
-  sql_table_name: public.iris
+  sql_table_name: misc.iris
   fields:
 
   - dimension: pl
@@ -24,4 +24,3 @@
   - measure: count
     type: count
     drill_fields: []
-

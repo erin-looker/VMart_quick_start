@@ -1,5 +1,5 @@
 - view: shipping_dimension
-  sql_table_name: public.shipping_dimension
+  sql_table_name: vmart.shipping_dimension
   fields:
 
   - dimension: ship_carrier
@@ -19,4 +19,3 @@
   - measure: count
     type: count
     drill_fields: []
-

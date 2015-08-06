@@ -1,5 +1,5 @@
 - view: inventory_fact
-  sql_table_name: public.inventory_fact
+  sql_table_name: vmart.inventory_fact
   fields:
 
   - dimension: date_key

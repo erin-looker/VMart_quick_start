@@ -1,5 +1,5 @@
 - view: foo
-  sql_table_name: public.foo
+  sql_table_name: misc.foo
   fields:
 
   - dimension: dt
@@ -8,4 +8,3 @@
   - measure: count
     type: count
     drill_fields: []
-

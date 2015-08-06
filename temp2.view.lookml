@@ -1,5 +1,5 @@
 - view: temp2
-  sql_table_name: public.temp2
+  sql_table_name: misc.temp2
   fields:
 
   - dimension: fico_range_high
@@ -13,4 +13,3 @@
   - measure: count
     type: count
     drill_fields: []
-

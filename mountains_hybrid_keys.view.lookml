@@ -1,5 +1,5 @@
 - view: mountains_hybrid_keys
-  sql_table_name: public.mountains_hybrid_keys
+  sql_table_name: misc.mountains_hybrid_keys
   fields:
 
   - dimension: data_type_guess
@@ -15,4 +15,3 @@
   - measure: count
     type: count
     drill_fields: [key_name]
-

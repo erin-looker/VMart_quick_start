@@ -1,5 +1,5 @@
 - view: order_items
-  sql_table_name: public.ORDER_ITEMS
+  sql_table_name: vmart.ORDER_ITEMS
   fields:
 
   - dimension: id
@@ -27,4 +27,3 @@
   - measure: total_amount
     sql: ${amount}
     type: sum
-

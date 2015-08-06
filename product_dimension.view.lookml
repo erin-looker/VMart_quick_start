@@ -1,5 +1,5 @@
 - view: product_dimension
-  sql_table_name: public.product_dimension
+  sql_table_name: vmart.product_dimension
   fields:
 
   - dimension: average_competitor_price

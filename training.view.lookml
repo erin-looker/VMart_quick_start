@@ -1,5 +1,5 @@
 - view: training
-  sql_table_name: public.training
+  sql_table_name: misc.training
   fields:
 
   - dimension: borrowerfico_range_high
@@ -37,4 +37,3 @@
   - measure: count
     type: count
     drill_fields: []
-

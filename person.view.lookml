@@ -1,5 +1,5 @@
 - view: person
-  sql_table_name: public.Person
+  sql_table_name: misc.Person
   fields:
 
   - dimension: id
@@ -19,4 +19,3 @@
   - measure: count
     type: count
     drill_fields: [id, surname, name]
-
