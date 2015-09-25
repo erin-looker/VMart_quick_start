@@ -3,6 +3,15 @@
 - include: "*.view.lookml"       # include all the views
 - include: "*.dashboard.lookml"  # include all the dashboards
 
+- explore: locations
+  joins:
+    - join: regions
+      sql_on: |
+        ST_Intersects(
+          ST_GeomFromText('POINT(' || ${locations.booking_long} || ' ' || ${locations.booking_lat} || ')'),
+          ST_GeomFromText(${regions.region_shape})
+        )
+      relationship: many_to_one
 
 - explore: store_sales_fact
   fields: [ALL_FIELDS*, -product_dimension.department_description]
