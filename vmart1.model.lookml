@@ -19,8 +19,23 @@
           ST_GeomFromText(${states.state_shape})
         )
       relationship: many_to_one
+    - join: cities
+      sql_on: |
+        STV_DWithin(
+          ST_GeomFromText('POINT(' || ${locations.booking_long} || ' ' || ${locations.booking_lat} || ')'),
+          ST_GeomFromText('POINT(' || ${cities.longitude} || ' ' || ${cities.latitude} || ')'),
+          {% parameter cities.distance_miles %} / 65)
+      relationship: many_to_one
 
-
+- explore: cities
+  joins:
+    - join: locations
+      sql_on: |
+        STV_DWithin(
+          ST_GeomFromText('POINT(' || ${locations.booking_long} || ' ' || ${locations.booking_lat} || ')'),
+          ST_GeomFromText('POINT(' || ${cities.longitude} || ' ' || ${cities.latitude} || ')'),
+          {% parameter cities.distance_miles %} / 65)
+      relationship: many_to_one
 
 - explore: store_sales_fact
   fields: [ALL_FIELDS*, -product_dimension.department_description]

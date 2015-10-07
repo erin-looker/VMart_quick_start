@@ -505,7 +505,6 @@
     persist_for: 24 hours
       
   fields:
-#     Define your dimensions and measures here, like this:
     - dimension: booking_id
       type: number
       sql: ${TABLE}.booking_id
